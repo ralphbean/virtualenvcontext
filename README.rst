@@ -1,5 +1,5 @@
-ansi2html
-=========
+virtualenvcontext
+=================
 
 :Author: Ralph Bean <ralph.bean@gmail.com>
 
