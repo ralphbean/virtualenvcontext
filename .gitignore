@@ -12,3 +12,5 @@ virtualenv
 venv
 *.pyo
 *.egg-info
+.coverage
+htmlcov

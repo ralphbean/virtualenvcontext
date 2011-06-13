@@ -29,6 +29,7 @@ setup(name='virtualenvcontext',
       url='http://github.com/ralphbean/virtualenvcontext',
       license='GPLv3+',
       packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
+      test_suite='nose.collector',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
