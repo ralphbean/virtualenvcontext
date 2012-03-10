@@ -1,6 +1,8 @@
 from setuptools import setup, find_packages
 import sys, os
 
+import multiprocessing, logging
+
 version = '0.1.2'
 
 f = open('README.rst')
@@ -30,6 +32,9 @@ setup(name='virtualenvcontext',
       license='GPLv3+',
       packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
       test_suite='nose.collector',
+      tests_requires=[
+          'nose',
+      ],
       include_package_data=True,
       zip_safe=False,
       install_requires=[
