@@ -51,8 +51,14 @@ Switch virtualenvs with a python context manager:
 %files
 %doc README.rst LICENSE
 
-%{python_sitelib}/* 
+%{python_sitelib}/%{modname}
+%{python_sitelib}/%{modname}-%{version}-*.egg-info
+
 
 %changelog
+* Mon May 07 2012 Ralph Bean <rbean@redhat.com> - 0.1.3-1
+- New upstream version -- resolves licensing ambiguity.
+- More explicit directory ownership in %%{python_sitelib}
+
 * Wed Apr 25 2012 Ralph Bean <rbean@redhat.com> - 0.1.2-1
 - initial package for Fedora
