@@ -1,5 +1,8 @@
+# Copyright (C) 2011-2012 Ralph Bean
+# License: http://www.gnu.org/licenses/gpl-2.0.txt GPL version 2 or higher
 
 TEST_VENV = 'test_virtualenv_package'
+
 
 def _do_virtualenv_command(cmd):
     import subprocess
@@ -14,8 +17,10 @@ def _do_virtualenv_command(cmd):
 def setup():
     _do_virtualenv_command('mkvirtualenv --no-site-packages ' + TEST_VENV)
 
+
 def teardown():
     _do_virtualenv_command('rmvirtualenv ' + TEST_VENV)
+
 
 def test_gzip():
     import virtualenvcontext as vc

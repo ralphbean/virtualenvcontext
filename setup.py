@@ -1,9 +1,12 @@
+# Copyright (C) 2011-2012 Ralph Bean
+# License: http://www.gnu.org/licenses/gpl-2.0.txt GPL version 2 or higher
+
 from setuptools import setup, find_packages
 import sys, os
 
 import multiprocessing, logging
 
-version = '0.1.2'
+version = '0.1.3'
 
 f = open('README.rst')
 long_description = f.read().strip()
@@ -29,7 +32,7 @@ setup(name='virtualenvcontext',
       author='Ralph Bean',
       author_email='ralph.bean@gmail.com',
       url='http://github.com/ralphbean/virtualenvcontext',
-      license='GPLv3+',
+      license='GPLv2+',
       packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
       test_suite='nose.collector',
       tests_requires=[

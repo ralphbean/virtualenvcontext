@@ -1,3 +1,6 @@
+# Copyright (C) 2011-2012 Ralph Bean
+# License: http://www.gnu.org/licenses/gpl-2.0.txt GPL version 2 or higher
+
 """ VirtualenvContext  -- switch virtualenvs with a python context manager
 
 See example usage at http://pypi.python.org/pypi/virtualenvcontext
