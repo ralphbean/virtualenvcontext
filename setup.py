@@ -6,7 +6,7 @@ import sys, os
 
 import multiprocessing, logging
 
-version = '0.1.3'
+version = '0.1.4'
 
 f = open('README.rst')
 long_description = f.read().strip()

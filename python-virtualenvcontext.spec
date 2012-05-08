@@ -1,7 +1,7 @@
 %global modname virtualenvcontext
 
 Name:             python-virtualenvcontext
-Version:          0.1.3
+Version:          0.1.4
 Release:          1%{?dist}
 Summary:          Switch virtualenvs with a python context manager
 
@@ -49,13 +49,17 @@ Switch virtualenvs with a python context manager:
 # Don't run the check section, since it requires a network connection.
 
 %files
-%doc README.rst LICENSE
+%doc README.rst LICENSE PKG-INFO
 
 %{python_sitelib}/%{modname}
 %{python_sitelib}/%{modname}-%{version}-*.egg-info
 
 
 %changelog
+* Tue May 08 2012 Ralph Bean <rbean@redhat.com> - 0.1.4-1
+- New upstream version to (again) resolve license inconsistency.
+- Included PKG-INFO in files section.
+
 * Mon May 07 2012 Ralph Bean <rbean@redhat.com> - 0.1.3-1
 - New upstream version -- resolves licensing ambiguity.
 - More explicit directory ownership in %%{python_sitelib}
