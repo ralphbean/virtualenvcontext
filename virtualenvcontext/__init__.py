@@ -29,11 +29,13 @@ class VenvModuleLoader(ihooks.ModuleLoader):
         self.venv = venv
         ihooks.ModuleLoader.__init__(self, verbose=verbose)
         self.hooks.load_source = _silent_load_source
+        self.VERSION = "%i.%i" % (sys.version_info[0], sys.version_info[1])
+
 
     def default_path(self):
         workon = os.getenv("WORKON_HOME", None)
         venv_location = "/".join([
-            workon, self.venv, 'lib/python2.7/site-packages'])
+            workon, self.venv, 'lib/python%s/site-packages' % self.VERSION])
         full = lambda i: "/".join([venv_location, i])
         venv_path = [venv_location] + [
             full(item) for item in os.listdir(venv_location)

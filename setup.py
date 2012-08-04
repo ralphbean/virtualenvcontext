@@ -4,9 +4,12 @@
 from setuptools import setup, find_packages
 import sys, os
 
-import multiprocessing, logging
+try:
+    import multiprocessing, logging
+except ImportError:
+    pass
 
-version = '0.1.4'
+version = '0.1.5'
 
 f = open('README.rst')
 long_description = f.read().strip()
@@ -22,7 +25,6 @@ setup(name='virtualenvcontext',
           'Intended Audience :: Developers',
           'License :: OSI Approved :: GNU General Public License (GPL)',
           'Programming Language :: Python',
-          'Programming Language :: Python :: 2.5',
           'Programming Language :: Python :: 2.6',
           'Programming Language :: Python :: 2.7',
           'Topic :: Software Development :: Libraries',
@@ -35,7 +37,7 @@ setup(name='virtualenvcontext',
       license='GPLv2+',
       packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
       test_suite='nose.collector',
-      tests_requires=[
+      tests_require=[
           'nose',
       ],
       include_package_data=True,
