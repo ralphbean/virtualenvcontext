@@ -5,26 +5,6 @@ virtualenvcontext
 
 .. comment: split here
 
-Build Status
-------------
-
-.. |master| image:: https://secure.travis-ci.org/ralphbean/virtualenvcontext.png?branch=master
-   :alt: Build Status - master branch
-   :target: http://travis-ci.org/#!/ralphbean/virtualenvcontext
-
-.. |develop| image:: https://secure.travis-ci.org/ralphbean/virtualenvcontext.png?branch=develop
-   :alt: Build Status - develop branch
-   :target: http://travis-ci.org/#!/ralphbean/virtualenvcontext
-
-+----------+-----------+
-| Branch   | Status    |
-+==========+===========+
-| master   | |master|  |
-+----------+-----------+
-| develop  | |develop| |
-+----------+-----------+
-
-
 Example
 -------
 
