@@ -9,7 +9,7 @@ try:
 except ImportError:
     pass
 
-version = '0.1.5'
+version = '0.1.6'
 
 f = open('README.rst')
 long_description = f.read().strip()
